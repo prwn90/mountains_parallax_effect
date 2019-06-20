@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mountains Parallax Effect!</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<section class="zoom">
+		<img src="text.png" class="text">
+
+		<img src="mountain1.png" class="layer1">
+		<img src="mountain2.png" class="layer2">
+	</section>
+
+	<section class="content">
+		<h1>Awesome Parallax Effect JQuery Mountains !</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		
+	</section>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			$('.layer1').css({
+				width: (100 + scroll/5) + "%"
+			})
+
+			$('.layer2').css({
+				width: (100 + scroll/5) + "%",
+				left: scroll/30 + "%"
+			})
+
+			$('.text').css({
+				top: - scroll/20 + "%"
+			})
+		})
+	</script>
+</body>
+
+</html>
