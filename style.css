@@ -25,7 +25,6 @@ section.zoom:before {
 section.zoom .layer1 {
 	
 	position: absolute;
-	/*top: 0;*/
 	left: 40%;
 	width: 100%;
 	transform: translateX(-50%);
@@ -34,7 +33,6 @@ section.zoom .layer1 {
 section.zoom .layer2 {
 	
 	position: absolute;
-	/*top: 0;*/
 	right: 0;
 	width: 100%;
 }
@@ -42,7 +40,6 @@ section.zoom .layer2 {
 section.zoom .text {
 	
 	position: absolute;
-	/*top: 0;*/
 	right: 0;
 	width: 80%;
 	transform: translateY(180%);
